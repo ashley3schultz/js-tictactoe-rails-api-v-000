@@ -113,7 +113,7 @@ function doTurn(sq){
 
 function attachListeners(){
   $('td').on('click', function(){
-    if (!$.text(this) && !checkWinner()) {
+    if (!$.(this).text && !checkWinner()) {
       doTurn(this)
     }
   })
